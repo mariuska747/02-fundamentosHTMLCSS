@@ -1,0 +1,90 @@
+.btn{
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--main-text-color);
+    color: #000;
+    border-radius: 10px;
+    border: var(--btn-border);
+    transition: background-color 0.5s ease-in;
+    transition: color 0.5s ease-out;
+}
+
+.btn:hover{
+    cursor: pointer;
+    &:hover {
+        background-color: var(--bg-color);
+        color: var(--main-text-color);
+    }       
+}
+
+.menu{
+    position: relative;
+    right:0;
+    top: 6rvh;
+    z-index: 5;
+    animation: descend 2s linear;
+    /*animation-fill-mode: forwards;*/
+    ul li{
+     list-style: none;
+     padding:4px;
+     margin: 4px;     
+   } 
+   li a{
+    text-decoration: none;
+    color: var(--text-white);
+   }
+   li a:hover{
+    border-bottom: var(--bg-color) solid 1px;
+    color: var(--bg-color);
+   }
+   li.disabled a{
+    color: var(--main-text-color);
+    }
+   .listadoMenu{
+    position: absolute;
+    top:-10px;
+    right:80px;
+    }
+    .fondoMenu{
+        position: absolute;
+        top:0;
+        right:80px;
+        width: 200px;
+        height: 240px;
+        background-color: var(--main-text-color);
+        opacity: 0.5;
+    }
+}
+
+
+
+
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    @supports (animation-timeline: scroll()) {
+      .menu {
+        animation-timeline: scroll();
+      }
+    }
+    @keyframes descend {
+      0% {
+        top: -10px;
+      }
+      100% {
+        top: 60px;
+      }
+    }
+}
+
+/*
+@media screen and (hover: hover) {  
+    .btn{
+        cursor: pointer;
+        &:hover {
+            background-color: var(--bg-color);
+            color: var(--main-text-color);
+        }       
+    }
+}*/
+

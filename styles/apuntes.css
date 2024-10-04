@@ -1,0 +1,31 @@
+:root{
+    --bg-color: #16161d;
+    --text-white: #fff;
+    --main-text-color: #999;
+
+    --yanone: "Yanone Kaffeesatz", sans-serif;
+    --yanone-regular: 200;
+    --yanone-bold: 700;
+    --mon-subr: "Montserrat Subrayada", sans-serif;
+    --mon-regular: 400; 
+    --main-font: "Mondo",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --main-font-regular:400;
+    --btn-border:  #fff solid 0.18rem;
+
+}
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    font-weight: var(--main-font-regular);
+}
+header{
+    position: relative;
+}
+
+.container{
+    max-width: 1084px;
+    border: 0 1px solid var(--main-text-color);
+}
+

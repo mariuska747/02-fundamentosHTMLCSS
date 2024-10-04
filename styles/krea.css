@@ -1,0 +1,56 @@
+.estadoReal{
+    width: 95%;
+    margin-top: 14vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding-bottom: 2rem;
+    border-bottom: solid 1px var(--main-text-color);
+    
+    .h4-p{
+        margin-right: 1rem;
+        h4{
+            color: var(--text-white);
+        } 
+    }
+
+}
+.contenedorImg{
+    margin-left: 1rem;
+    width: 100%;
+    overflow: hidden;
+
+    img{
+        width: 110%;
+    }
+
+}
+
+.galeria{
+    width:95%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    gap: 10px;
+    img{
+        width:100%
+    }
+    .horizontal{
+        height: 100%;
+        width: 100%; 
+        overflow: hidden;
+        img{
+            width:128%;
+        }
+    }
+    border-bottom: #000 solid 3px ;
+    margin-bottom: 20vh;
+}
+.h4-p{
+    margin-left: 1rem;
+    h4{
+        color: var(--text-white);
+    } 
+}
