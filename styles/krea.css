@@ -1,5 +1,5 @@
 .estadoReal{
-    width: 95%;
+    width: 100%;
     margin-top: 14vh;
     display: flex;
     flex-direction: row-reverse;
@@ -15,42 +15,36 @@
             color: var(--text-white);
         } 
     }
-
-}
-.contenedorImg{
-    margin-left: 1rem;
-    width: 100%;
-    overflow: hidden;
-
-    img{
-        width: 110%;
+    .contenedorImg{
+        margin-left: 1rem;
+        width: 100%;
+        overflow: hidden;
+    
+        img{
+            width: 110%;
+        }
     }
-
 }
+
 
 .galeria{
-    width:95%;
+    width:100%;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    gap: 15px;
     img{
         width:100%
     }
     .horizontal{
-        height: 100%;
-        width: 100%; 
+        height: 100%; 
         overflow: hidden;
         img{
-            width:128%;
+            width:40vw;
         }
     }
-    border-bottom: #000 solid 3px ;
-    margin-bottom: 20vh;
-}
-.h4-p{
-    margin-left: 1rem;
-    h4{
-        color: var(--text-white);
-    } 
+    border-bottom: 3px var(--black) solid;
+    padding: 15px 0;
+    margin-bottom: 2rem;
+    background-color:  var(--black) ;
 }

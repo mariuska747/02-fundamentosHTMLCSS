@@ -1,0 +1,31 @@
+.audio-section{
+    border-top: 1px dotted var(--main-text-color);
+    padding: 2rem;   
+    .h5-p{
+        font-size: 17px;
+        font-weight: var(--mon-regular);
+    }
+    .reproductor-audio{
+        width: 100%;
+        padding-left: 1rem;
+        .h5-p{
+            font-size: 1rem;
+        }
+        audio {            
+            width: 30%;
+            margin-left: 2rem;
+            padding: 2rem;
+        }
+    
+    }
+  
+
+}
+
+.video-section{
+    padding: 2rem;
+    border-top: 1px dotted var(--main-text-color);
+    video {            
+        margin-left: 1rem;
+    }
+}

@@ -56,7 +56,14 @@
     }
 }
 
+h4.h4-p{
+  margin-left: 1rem;
+  color: var(--text-white);
+  font-family: var(--yanone);
+  font-weight: var(--yanone-regular);
+  font-size: 2rem;
 
+}
 
 
 
