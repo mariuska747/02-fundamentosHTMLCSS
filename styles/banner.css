@@ -28,7 +28,9 @@
 .soul{
     width: 100%;
     height: 20rem;
-    opacity: 0.5;
+    opacity: 0.1;
+    animation: opacityBanner 4s ease-in-out;
+    animation-fill-mode: forwards;
     background-image: url("../assets/banner-bckg-mobile.jpg");
     background-repeat: no-repeat;
     background-size:cover; /* o contain */
@@ -41,5 +43,17 @@
         position: absolute;
         top: 2rem;
         left: 20vw; 
+    }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    @keyframes opacityBanner {
+        0% {
+            opacity:0.1;
+        }
+        100% {
+            opacity:0.4;
+        }
     }
 }

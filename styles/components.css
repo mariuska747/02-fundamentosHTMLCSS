@@ -21,6 +21,10 @@
   top:10px;
   right: 3%;
 }
+.inicio:hover{
+  cursor: pointer;
+  color: var(--text-white);  
+}
 
 .menu{
     position: relative;
@@ -74,7 +78,6 @@ h4.h4-p{
 
 @media screen and (prefers-reduced-motion: no-preference) {
 
-    
     .menu {
         animation-timeline: ease-in;
       }

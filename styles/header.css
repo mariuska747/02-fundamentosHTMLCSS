@@ -13,11 +13,37 @@
         max-width: 200px;
         padding: 10px;
     }
+    .opacity{
+        opacity: 0.1;
+        animation: opacityProfile 2s ease-out 2s;
+        animation-fill-mode: forwards;
+    }
     h1{
         color: var(--main-text-color);
         font-size: 1rem;
         font-family: var(--mon-subr);
         font-weight: var(--mon-regular);
+        opacity: 1;
     }
 }
 
+@media  screen and (width >= 768) {
+    .top{
+        h1{
+            font-size: 25px;
+            opacity: 0.5;
+        }
+    }    
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    @keyframes opacityProfile {
+        0% {
+            opacity:0.1;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+}

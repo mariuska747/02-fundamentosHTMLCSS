@@ -6,9 +6,8 @@
         font-weight: var(--mon-regular);
     }
     .reproductor-audio{
-        width: 50%;
         audio{
-            width: 70%;
+            width: 50%;
         }
     }
 }
@@ -18,8 +17,13 @@
     width: 400;
     height: 500px;
     background-color: var(--black);   
+}
 
-    .reproductor-video{
-        margin: 0 50%;  
+@media screen and (width > 768) {
+   
+    .reproductor-audio{
+        audio{
+            width: 100%;
+        }
     }
 }
