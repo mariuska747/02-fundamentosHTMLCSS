@@ -65,10 +65,52 @@
         </section>
         <main class="main-form">
             <h3 class="h3">Formulario de contacto</h3>      
-            <form class="formulario" action="">
-
-            <p class="btn">CONTACTAR</p>
-            </form>
+            <form class="formulario" method="post" novalidate>
+                <div class="flex-form">
+                    <label for="nombre">Introduce tu nombre</label>
+                    <input class="input" type="text" required id="nombre" placeholder="Nombre" name="nombre" autocomplete="off">
+                    <label for="apellidos">Introduce tus apellidos</label>
+                    <input class="input" type="text" required id="apellidos" placeholder="Apellidos" name="apellidos" autocomplete="off">
+                </div>
+            
+                <div class="flex-form">
+                    <label for="mail">Email</label>
+                    <input class="input" type="email" id="mail" placeholder="Pon tu correo" name="correo" value="test@test.com"
+                        autocomplete="off" readonly required>
+                    <label for="git">Usuario de GitHub</label>
+                    <input class="input" required id="git" placeholder="@[usuario]" name="github" autocomplete="off"
+                        pattern="^@[^\s]+">
+                </div>
+                <div class="flex-form">
+                    <fieldset class="flex-form">
+                        <legend>¿Cómo me conociste?</legend>
+                        <label for="google">Google</label>
+                        <input required type="radio" id="google" name="know" value="google" checked>
+                        <label for="kc">KeepCoding KickOff</label>
+                        <input required type="radio" id="kc" name="know" value="keepcoding">
+                        <label for="github">GitHub</label>
+                        <input required type="radio" id="github" name="know" value="github">
+                    </fieldset>
+            
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="input" required type="textarea" id="mensaje" name="mensaje" minlength="15" maxlength="150"
+                            cols="100" rows="15" autocomplete="on">
+                            </div>
+                        </div>
+            
+                        <div class="flex-form">
+                        <fieldset class="flex">
+                                <input required type="checkbox" id="news" name="news" value="newsletter">
+                                <label for="news">Apuntarme a la newsletter</label>
+                        </fieldset>
+            
+                        <div class="flex">
+                            <button class="btn secondary" type="reset">Reset</button>
+                            <button class="btn" type="submit">Contactar</button>
+                        </div>
+                    </div>
+                        </form>
 
         </main>
     </div>
