@@ -1,34 +1,97 @@
-:root{
-    --bg-color: #16161d;
-    --text-white: #fff;
-    --main-text-color: #999;
-    --black: #000;
-
-    --yanone: "Yanone Kaffeesatz", sans-serif;
-    --yanone-regular: 200;
-    --yanone-bold: 700;
-    --mon-subr: "Montserrat Subrayada", sans-serif;
-    --mon-regular: 400; 
-    --main-font: "Mondo",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --main-font-regular:400;
-    --btn-border:  #fff solid 0.18rem;
-
+.btn{
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--main-text-color);
+    color: #000;
+    border-radius: 10px;
+    border: var(--btn-border);
+    transition: background-color 0.5s ease-in;
+    transition: color 0.5s ease-out;
 }
-body{
-    margin: 0;
-    background-color: var(--bg-color);
-    color: var(--main-text-color);
-    font-family: var(--main-font);
-    font-weight: var(--main-font-regular);
+
+.btn:hover{
+    cursor: pointer;
+    &:hover {
+        background-color: var(--bg-color);
+        color: var(--main-text-color);
+    }       
 }
-header{
+
+.menu{
     position: relative;
+    right:0;
+    top: 6rvh;
+    z-index: 5;
+    animation: descend 2s linear;
+    /*animation-fill-mode: forwards;*/
+    ul li{
+     list-style: none;
+     padding:4px;
+     margin: 4px;     
+   } 
+   li a{
+    text-decoration: none;
+    color: var(--text-white);
+   }
+   li a:hover{
+    border-bottom: var(--bg-color) solid 1px;
+    color: var(--bg-color);
+   }
+   li.disabled a{
+    color: var(--main-text-color);
+    }
+   .listadoMenu{
+    position: absolute;
+    top:-10px;
+    right:80px;
+    }
+    .fondoMenu{
+        position: absolute;
+        top:0;
+        right:80px;
+        width: 200px;
+        height: 240px;
+        background-color: var(--main-text-color);
+        opacity: 0.5;
+    }
 }
 
-.container{
-    width:100%;
-    margin: 0 auto;
-    max-width: 1084px;
-    border: 0 1px solid var(--main-text-color);
+h4.h4-p{
+  margin-left: 1rem;
+  color: var(--text-white);
+  font-family: var(--yanone);
+  font-weight: var(--yanone-regular);
+  font-size: 2rem;
+
 }
+
+
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    @supports (animation-timeline: scroll()) {
+      .menu {
+        animation-timeline: scroll();
+      }
+    }
+    @keyframes descend {
+      0% {
+        top: -10px;
+      }
+      100% {
+        top: 60px;
+      }
+    }
+}
+
+/*
+@media screen and (hover: hover) {  
+    .btn{
+        cursor: pointer;
+        &:hover {
+            background-color: var(--bg-color);
+            color: var(--main-text-color);
+        }       
+    }
+}*/
 
