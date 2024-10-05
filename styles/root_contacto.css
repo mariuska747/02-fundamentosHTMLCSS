@@ -2,10 +2,10 @@
     position: relative;;
     margin: 0 auto;
     max-width: 1084px;
-    width:100%;
-    height: 130vh;
+    width:120%;
+    height: 90rem;
     opacity: 0.8;
-    z-index: 0;
+    z-index: 1;
     background-color: var(--text-white);
 }
 
@@ -16,6 +16,7 @@ body{
     background-image: url("../assets/contacto/fondoBody3.jpg");
     background-repeat: no-repeat;
     background-size:cover; /* o contain */
+    position: relative;
 }
 
 .top .h2{
@@ -31,5 +32,28 @@ body{
     padding-top: 15px;
     padding-left: 15px;
     border-top: #000 dotted 1px;
+}
+
+.main-form{
+    position: absolute;
+    width: 95%;
+    max-width: 1084px;
+    top:30rem;
+    padding: 0 15px;
+}
+
+
+footer.footer{
+    position: absolute;
+    width: 100%;
+    max-width: 1084px;
+    bottom:0;
+    padding: 0 15px;
+    height: 40px;
+    z-index: 5;
+    background-color: var(--bg-color);
+    p{
+        color: var(--text-white)
+    }
 }
 

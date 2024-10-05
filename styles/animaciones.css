@@ -1,9 +1,11 @@
 .barra{
     width:60vw;
+    max-width: 777px;
     height: 15px;
     border-radius: 8px;
     border:0.5px solid var(--bg-color);   
 }
+
 .barraMascara{
     width:1vw;
     height: 15px;
@@ -27,15 +29,11 @@
 
 .skills{
     position:absolute;
-    top:25vh;
+    top: 15rem;
     left: 10vw;
 }
 
-.main-form{
-    position: absolute;
-    top:50vh;
-    padding: 0 15px;
-}
+
 
 .flex{
     display: flex;
