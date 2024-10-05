@@ -1,0 +1,21 @@
+.container{
+    width:98%;
+    position: relative;;
+    margin: 0 auto;
+    max-width: 1084px;
+}
+
+.fondo{
+    width:100%;
+    height: 90vh;
+    opacity: 0.3;
+    background-image: url("../assets/contacto/fondoBody.jpg");
+    background-repeat: no-repeat;
+    background-size:cover; /* o contain */
+    border: #000 solid 3px;
+    
+}
+
+bod{
+    background-color: var(--text-white);
+}
