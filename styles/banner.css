@@ -1,8 +1,7 @@
 .banner{
     position: relative;
     width: 100%;
-    height: 50vh;
-    background-color: var(--bg-color);
+    height: 30rem;
 
     .ia-gen{
         font-family: var(--yanone);
@@ -11,8 +10,18 @@
         text-align: right;
         opacity: 1;
         position: absolute;
-        bottom: 20px;
-        right: 1vw;   
+        top: 12rem;
+        left: 15px;   
+    }
+    .clonacion{
+        color: var(--main-text-color);
+        font-family: var(--yanone);
+        font-size: 2rem;
+        font-weight: var(--yanone-regular);
+        text-align: right;
+        border: #fff solid 3px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -26,12 +35,11 @@
     border: #000 solid 3px;
 }
 
-.clonacion{
-    color: var(--main-text-color);
-    font-family: var(--yanone);
-    font-size: 2rem;
-    font-weight: var(--yanone-regular);
-    border: #fff solid 3px;
-    padding: 1.5rem;
-    margin: 1.5rem;
+@media (width > 768){
+    .ia-gen{
+        text-align: left;
+        position: absolute;
+        top: 2rem;
+        left: 20vw; 
+    }
 }

@@ -8,19 +8,18 @@
     .reproductor-audio{
         width: 50%;
         audio{
-            width: 10%;
+            width: 70%;
         }
     }
 }
 .video-section{
     border-top: 1px dotted var(--main-text-color);
     padding: 2rem; 
+    width: 400;
+    height: 500px;
+    background-color: var(--black);   
+
     .reproductor-video{
-        width: 100%;
-        height: 20vh;
-        background-color: var(--black);
-        video {           
-            padding: 2rem;
-        }   
+        margin: 0 50%;  
     }
 }

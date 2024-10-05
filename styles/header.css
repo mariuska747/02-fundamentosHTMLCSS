@@ -1,11 +1,11 @@
 .top{
-    margin: 0;
-    width: 100%;
+    margin: 0 10px;
+    width: 90%;
     position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:1rem;
+    gap:0.5rem;
 
     img{       
         width: 30%;
