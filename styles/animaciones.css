@@ -1,0 +1,75 @@
+.barra{
+    width:60vw;
+    height: 15px;
+    border-radius: 8px;
+    border:0.5px solid var(--bg-color);   
+}
+.barraMascara{
+    width:1vw;
+    height: 15px;
+    background-color: rgb(253, 84, 38);
+    overflow:hidden;
+    background-size: contain;    
+    &.anim-fe{
+        animation: frontEnd 4s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    &.anim-be{
+        animation: backEnd 4s ease-in-out 2s;
+        animation-fill-mode: forwards;
+    }
+    &.anim-js{
+        animation: js 5s ease-in-out 1s;
+        animation-fill-mode: forwards;
+    }     
+}
+
+
+.skills{
+    position:absolute;
+    top:25vh;
+    left: 10vw;
+}
+
+.main-form{
+    position: absolute;
+    top:50vh;
+    padding: 0 15px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    @keyframes frontEnd {
+        0% {
+            width: 1vw;
+        }
+        100% {
+            width: 40vw;
+        }
+    }
+
+    @keyframes backEnd {
+        0% {
+            width: 1vw;
+        }
+        100% {
+            width: 10vw;
+        }
+    }
+
+    @keyframes js {
+        0% {
+            width: 1vw;
+        }
+        100% {
+            width: 20vw;
+        }
+    }
+}

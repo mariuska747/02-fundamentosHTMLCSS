@@ -29,7 +29,8 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/root.css">
         <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/root_contacto.css">
+        <link rel="stylesheet" href="styles/root_contacto.css">
+        <link rel="stylesheet" href="styles/animaciones.css">
 </head>
 
 <body>
@@ -38,11 +39,36 @@
         <div class="top">
             <img class="opacity" src="./assets/foto-perfil.png">
             <h1>CV María Fernández</h1>
-            <p class="btn">MENÚ</p>
+            <h2 class="h2">Skills</h2>
         </div>
-        <div class="fondo"></div>
         </header>
-        <main>
+
+        <section class="skills">
+            <div class="flex">
+                <p>Front End</p>
+                <div class="barra">
+                    <div class="barraMascara anim-fe"></div>
+                </div>
+            </div>
+            <div class="flex">
+                <p>Back End</p>
+                <div class="barra">
+                    <div class="barraMascara anim-be"></div>
+                </div>
+            </div>
+            <div class="flex">
+                <p>JavaScript</p>
+                <div class="barra">
+                    <div class="barraMascara anim-js"></div>
+                </div>
+            </div>
+        </section>
+        <main class="main-form">
+            <h3 class="h3">Formulario de contacto</h3>      
+            <form class="formulario" action="">
+
+            <p class="btn">CONTACTAR</p>
+            </form>
 
         </main>
         <footer>
