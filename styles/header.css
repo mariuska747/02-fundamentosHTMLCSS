@@ -27,7 +27,7 @@
     }
 }
 
-@media  screen and (width >= 768) {
+@media  screen and (min-width:767px) {
     .top{
         h1{
             font-size: 25px;

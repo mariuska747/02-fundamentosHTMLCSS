@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Curriculum María Fernández">
     <meta property="og:description" content="IA Generativa: Portfolio de los trabajos realizados">
-    <meta property="og:image" content="https://github.com/mariuska747/02-fundamentosHTMLCSS/blob/main/assets/imgIA/650c8215-f525-480e-893a-a2e6a5466876.png">
+    <meta property="og:image"
+        content="https://github.com/mariuska747/02-fundamentosHTMLCSS/blob/main/assets/imgIA/650c8215-f525-480e-893a-a2e6a5466876.png">
 
     <title>Curriculum de Maria Fernandez. seccióm IA GENERATIVA: clonación</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,24 +24,25 @@
         href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Montserrat+Subrayada:wght@400;700&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/components.css">
-        <link rel="stylesheet" href="styles/banner.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/root.css">
-        <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/root_contacto.css">
-        <link rel="stylesheet" href="styles/animaciones.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/root.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/root_contacto.css">
+    <link rel="stylesheet" href="styles/animaciones.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-        <div class="top">
-            <img class="opacity" src="./assets/foto-perfil.png">
-            <h1>CV María Fernández</h1>
-            <h2 class="h2">Skills</h2>
-        </div>
+            <div class="top">
+                <img class="opacity" src="./assets/foto-perfil.png">
+                <h1>CV María Fernández</h1>
+                <h2 class="h2">Skills</h2>
+            </div>
         </header>
 
         <section class="skills">
@@ -64,26 +66,24 @@
             </div>
         </section>
         <main class="main-form">
-            <h3 class="h3">Formulario de contacto</h3>      
+            <h3 class="h3">Formulario de contacto</h3>
             <form class="formulario" method="post" novalidate>
                 <div class="flex-form">
                     <label for="nombre">Introduce tu nombre</label>
                     <input class="input" type="text" required id="nombre" placeholder="Nombre" name="nombre" autocomplete="off">
                     <label for="apellidos">Introduce tus apellidos</label>
-                    <input class="input" type="text" required id="apellidos" placeholder="Apellidos" name="apellidos" autocomplete="off">
-                </div>
-            
-                <div class="flex-form">
+                    <input class="input" type="text" required id="apellidos" placeholder="Apellidos" name="apellidos"
+                        autocomplete="off">
+        
                     <label for="mail">Email</label>
-                    <input class="input" type="email" id="mail" placeholder="Pon tu correo" name="correo" value="test@test.com"
-                        autocomplete="off" readonly required>
+                    <input class="input" type="email" id="mail" placeholder="Pon tu correo" name="correo"
+                        value="keepcoding@mflapique.com" autocomplete="off" readonly required>
                     <label for="git">Usuario de GitHub</label>
                     <input class="input" required id="git" placeholder="@[usuario]" name="github" autocomplete="off"
                         pattern="^@[^\s]+">
-                </div>
-                <div class="flex-form">
-                    <fieldset class="flex-form">
-                        <legend>¿Cómo me conociste?</legend>
+        
+                    <p>¿Cómo me conociste?</p>
+                    <fieldset class="flex">
                         <label for="google">Google</label>
                         <input required type="radio" id="google" name="know" value="google" checked>
                         <label for="kc">KeepCoding KickOff</label>
@@ -91,27 +91,26 @@
                         <label for="github">GitHub</label>
                         <input required type="radio" id="github" name="know" value="github">
                     </fieldset>
-            
-                    <div>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea class="input" required type="textarea" id="mensaje" name="mensaje" minlength="15" maxlength="150"
-                            cols="100" rows="15" autocomplete="on">
-                            </div>
-                        </div>
-            
-                        <div class="flex-form">
-                        <fieldset class="flex">
-                                <input required type="checkbox" id="news" name="news" value="newsletter">
-                                <label for="news">Apuntarme a la newsletter</label>
-                        </fieldset>
-            
-                        <div class="flex">
-                            <button class="btn secondary" type="reset">Reset</button>
-                            <button class="btn" type="submit">Contactar</button>
-                        </div>
-                    </div>
-                        </form>
-
+        
+        
+                    <label for="mensaje"></label>
+                    <textarea class="input" required type="textarea" id="mensaje" placeholder="¿Qué necesitas?" minlength="15"
+                        maxlength="150" cols="40" rows="15" autocomplete="off"></textarea>
+        
+        
+        
+                    <fieldset class="flex">
+                        <input required type="checkbox" id="news" name="news" value="newsletter">
+                        <label for="news">Apuntarme a la newsletter</label>
+                    </fieldset>
+                </div>
+                <div class="flex">
+                    <button class="btn secondary">Reset</button>
+                    <button class="btn">Contactar</button>
+                </div>
+        
+            </form>
+        
         </main>
     </div>
     <footer class="footer">

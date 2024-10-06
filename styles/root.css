@@ -34,15 +34,49 @@ header{
 }
 
 footer{
-    width: 80%;
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-    margin: 1rem;
-    text-align: center;
+    position: relative;
+    width: 85%;
     font-family: var(--mon-subr);
+
+    bottom: 0;
+    height: 8rem;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    min-width: 425px;
+    max-width: 768px;
+
     p{
         font-size: 12px;
+        position: absolute;
+        right: 160px;
+    }
+    a img{
+        position: absolute;
+        width:10%;
+        bottom:0;
+        &.github{
+            left:80px;
+        }
+        &.linkedin{
+            left:40px;
+        }
+        transition: width 2s ease-in-out;    
+        &:hover:hover{
+            width: 13%;
+        }
     }
 }
 
+@media screen and (min-width:767px) {
+
+    footer a img{
+        width:7%;
+        &:hover:hover{
+            width: 9%;
+        }
+    }
+
+}

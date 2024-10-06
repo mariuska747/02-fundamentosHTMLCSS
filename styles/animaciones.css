@@ -33,15 +33,6 @@
     left: 10vw;
 }
 
-
-
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
 @media screen and (prefers-reduced-motion: no-preference) {
 
     @keyframes frontEnd {

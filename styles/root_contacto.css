@@ -1,9 +1,10 @@
 .container{
     position: relative;;
     margin: 0 auto;
-    max-width: 1084px;
-    width:120%;
-    height: 90rem;
+    max-width: 1048px;
+    min-width: 340px;
+    width:89%;
+    height: 115rem;
     opacity: 0.8;
     z-index: 1;
     background-color: var(--text-white);
@@ -36,10 +37,11 @@ body{
 
 .main-form{
     position: absolute;
-    width: 95%;
+    width: 90%;
     max-width: 1084px;
-    top:30rem;
-    padding: 0 15px;
+    top:20rem;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -55,5 +57,35 @@ footer.footer{
     p{
         color: var(--text-white)
     }
+}
+
+button.btn{
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    transition: background-color 0.5s ease-in;
+    transition: color 0.5s ease-out;
+    padding: 10px;
+    width:100px;
+    height: 60px;
+    text-align: center;
+    &.secondary {
+        background-color: transparent;
+        color: var(--bg-color);
+        border: 1px solid var(--black);
+      }
+    
+}
+
+button.btn:hover{
+    cursor: pointer;
+    &:hover{
+        background-color: var(--main-text-color);
+        color: #000;
+    }
+    &.secondary {
+        &:hover{
+            background-color: var(--main-text-color);
+            color: #fff;
+        }
 }
 
