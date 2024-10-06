@@ -1,9 +1,9 @@
 .banner{
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 30rem;
 
-    .ia-gen{
+    h2.ia-gen{
         font-family: var(--yanone);
         font-size: 4rem;
         color: var(--text-white);

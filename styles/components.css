@@ -2,7 +2,7 @@
     padding: 10px;
     margin: 10px;
     background-color: var(--main-text-color);
-    color: #000;
+    color:  var(--black);
     border-radius: 10px;
     border: var(--btn-border);
     transition: background-color 0.5s ease-in;
@@ -16,14 +16,20 @@
         color: var(--text-white);
     }       
 }
-.inicio{
-  position: fixed;
-  top:10px;
-  right: 3%;
+a .inicio{
+    position: fixed;
+    top:10px;
+    right: 80px;
+    z-index: 50;
+    color: var(--black);
+    transition: color 1s linear;
+    transition: background-color 0.5s ease-in;
 }
-.inicio:hover{
-  cursor: pointer;
-  color: var(--text-white);  
+a .inicio:hover{
+    cursor: pointer;
+    &:hover{
+      color: var(--text-white);
+    }  
 }
 
 .menu{
@@ -41,10 +47,13 @@
    li a{
     text-decoration: none;
     color: var(--text-white);
+    transition: color 0.5s linear;
    }
    li a:hover{
-    border-bottom: var(--bg-color) solid 1px;
-    color: var(--bg-color);
+      &:hover{
+        border-bottom: var(--bg-color) solid 1px;
+        color: var(--bg-color);
+      }
    }
    li.disabled a{
     color: var(--main-text-color);
@@ -92,6 +101,13 @@ h4.h4-p{
     }
 }
 
+@media screen and (max-width:425px) {
+
+  a .inicio{
+    right: 30px;
+  }
+  
+}
 /*
 @media screen and (hover: hover) {  
     .btn{

@@ -12,17 +12,17 @@
     }
 }
 .video-section{
-    border-top: 1px dotted var(--main-text-color);
-    padding: 2rem; 
-    width: 400;
-    height: 850px;
+    border-top: 1px dotted var(--main-text-color); 
+    width: 95%;
+    height: 900px;
     background-color: var(--black);   
 }
 .reproductor-video{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    min-width: 420px;
+    min-width: 425px;
+    width: 80%;
 }
 
 @media screen and (min-width:767px) {
@@ -30,7 +30,7 @@
     .reproductor-audio{
         audio{
             width: 100%;
-        }
+       @ }
     }
     .video-section{
         height:500px

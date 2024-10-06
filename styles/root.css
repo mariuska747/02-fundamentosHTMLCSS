@@ -12,10 +12,18 @@
     --main-font: "Mondo",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --main-font-regular:400;
     --btn-border:  #fff solid 0.18rem;
+    
 
 }
+html{
+    width:90%;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0;
+    min-width: 425px;
     background-color: var(--bg-color);
     color: var(--main-text-color);
     font-family: var(--main-font);
@@ -27,43 +35,47 @@ header{
 }
 
 .container{
-    width:98%;
+    width:80%;
     position: relative;;
     margin: 0 auto;
     max-width: 1084px;
 }
 
-footer{
-    position: relative;
-    width: 85%;
-    font-family: var(--mon-subr);
+.main{
+    width:100%;
+    height: 1000px;
+    margin:0 auto;
+}
 
+footer.footer{
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    font-family: var(--mon-subr);
     bottom: 0;
-    height: 8rem;
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    min-width: 425px;
+    height: 6rem;
+    min-width: 400px;
     max-width: 768px;
 
     p{
         font-size: 12px;
         position: absolute;
-        right: 160px;
+        right: 60px;
+        bottom: 20px;
     }
     a img{
         position: absolute;
         width:10%;
-        bottom:0;
-        &.github{
-            left:80px;
+        bottom:10px;
+        &.gh{
+            left: 70px;
+            z-index: 10;
         }
-        &.linkedin{
-            left:40px;
+        &.linkedin{ 
+            left:50px;
+            z-index: 5;
         }
-        transition: width 2s ease-in-out;    
+        transition: width 1s ease-in-out;    
         &:hover:hover{
             width: 13%;
         }
@@ -73,10 +85,15 @@ footer{
 @media screen and (min-width:767px) {
 
     footer a img{
-        width:7%;
+        width:2%;
+
         &:hover:hover{
-            width: 9%;
+            width: 4%;
         }
+    }
+    .main {
+        height: 600px;
     }
 
 }
+

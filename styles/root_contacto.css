@@ -1,9 +1,9 @@
 .container{
     position: relative;;
     margin: 0 auto;
-    max-width: 1048px;
+    max-width: 1440px;
     min-width: 340px;
-    width:89%;
+    width:94%;
     height: 115rem;
     opacity: 0.8;
     z-index: 1;
@@ -44,20 +44,12 @@ body{
     margin: 0;
 }
 
-
-footer.footer{
-    position: absolute;
-    width: 100%;
-    max-width: 1084px;
-    bottom:0;
-    padding: 0 15px;
-    height: 40px;
-    z-index: 5;
-    background-color: var(--bg-color);
-    p{
-        color: var(--text-white)
-    }
+footer{
+    background-color: var(--text-white);
+    opacity: 0.7;
+    color: var(--main-text-color)
 }
+
 
 button.btn{
     background-color: var(--bg-color);
@@ -87,5 +79,11 @@ button.btn:hover{
             background-color: var(--main-text-color);
             color: #fff;
         }
+    }
 }
 
+.top{
+    a img{       
+        width: 70%; 
+    }
+}

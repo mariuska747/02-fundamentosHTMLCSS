@@ -1,5 +1,5 @@
 .estadoReal{
-    width: 100%;
+    width: 80%;
     margin-top: 14vh;
     display: flex;
     flex-direction: row-reverse;
@@ -21,18 +21,19 @@
         overflow: hidden;
     
         img{
-            width: 110%;
+            width: 80%;
         }
     }
 }
 .galeria{
-    width: 100%;
+    width: 94%;
+    overflow-x: hidden;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap: 15px;
     img{
-        width:100%
+        width:90%
     }
     .overflow{
         width: 100%;
@@ -44,3 +45,11 @@
     margin-bottom: 2rem;
     background-color:  var(--black) ;
 }
+
+@media screen and (max-width:425px) {
+
+    .estadoReal {
+      margin-top: 9vh;
+    }
+    
+  }
