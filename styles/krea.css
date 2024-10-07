@@ -1,8 +1,8 @@
 .estadoReal{
-    width: 80%;
-    margin-top: 14vh;
+    width: 100%;
+    margin-top: 3rem;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:10px;
@@ -16,17 +16,15 @@
         } 
     }
     .contenedorImg{
-        margin-left: 1rem;
         width: 100%;
-        overflow: hidden;
-    
         img{
-            width: 80%;
+            min-width: 200px;
+            max-width: 500px;
         }
     }
 }
 .galeria{
-    width: 94%;
+    width: 100%;
     overflow-x: hidden;
     align-items: center;
     display: grid;
@@ -37,8 +35,6 @@
     }
     .overflow{
         width: 100%;
-
-       /* overflow-x: hidden;*/
     } 
 
     border-bottom: 3px var(--black) solid;
@@ -49,7 +45,19 @@
 @media screen and (max-width:425px) {
 
     .estadoReal {
-      margin-top: 9vh;
+      margin-top: 1rem;
+      img{
+        margin-left: 1rem;
+        width: 60%;
+      }
+      p{
+        margin-left: 1rem;
+      }
     }
-    
-  }
+ }
+
+@media screen and (min-width:767px) {
+    .estadoReal{
+        flex-direction: row-reverse;
+    }
+}

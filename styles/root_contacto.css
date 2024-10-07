@@ -26,6 +26,10 @@ body{
     color: var(--bg-color); 
 }
 
+.top img:hover{
+    cursor: pointer;
+}
+
 .h3{
     font-family: var(--yanone);
     font-size: 3rem;

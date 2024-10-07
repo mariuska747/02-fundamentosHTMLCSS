@@ -16,16 +16,16 @@
         color: var(--text-white);
     }       
 }
-a .inicio{
+.inicio{
     position: fixed;
     top:10px;
-    right: 80px;
+    right: 20%;
     z-index: 50;
     color: var(--black);
     transition: color 1s linear;
     transition: background-color 0.5s ease-in;
 }
-a .inicio:hover{
+.inicio:hover{
     cursor: pointer;
     &:hover{
       color: var(--text-white);

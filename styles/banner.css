@@ -1,13 +1,12 @@
 .banner{
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 30rem;
 
     h2.ia-gen{
         font-family: var(--yanone);
         font-size: 4rem;
         color: var(--text-white);
-        text-align: right;
         opacity: 1;
         position: absolute;
         top: 12rem;
@@ -21,7 +20,7 @@
         text-align: right;
         border: #fff solid 3px;
         padding: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin: 1rem;
     }
 }
 

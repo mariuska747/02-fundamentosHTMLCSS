@@ -22,8 +22,7 @@ html{
 }
 
 body{
-    margin: 0;
-    min-width: 425px;
+    margin: 0 auto;
     background-color: var(--bg-color);
     color: var(--main-text-color);
     font-family: var(--main-font);
@@ -35,7 +34,7 @@ header{
 }
 
 .container{
-    width:80%;
+    width:100%;
     position: relative;;
     margin: 0 auto;
     max-width: 1084px;
